@@ -10,7 +10,7 @@
 /******************************************************
     Prepared by Ben Burnham and Mateen Sharif
     EC523 Intro to Embedded Systems
-    Lab 4: traffic light controller
+    Final Project
 
 ******************************************************/
 
