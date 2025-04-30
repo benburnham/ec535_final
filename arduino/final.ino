@@ -9,10 +9,10 @@ Servo myservo;    // create servo object
 int pos = 0;      // variable to store the servo position
 
 // GPIO
-int inPin = 2;    // Input pin
+// int inPin = 2;    // Input pin - Now A1
+int val = 0;
 int outPin = 4;   // Output pin
 int scaledValue;  // Init potentiometer
-int val = 0;
 int co2val = -1;
 int new_co2val = -1;
 int tempval = -1;
@@ -32,7 +32,7 @@ void setup()
   myservo.attach(3);
 
   // Beagle Signals
-  pinMode(inPin, INPUT);
+  // pinMode(inPin, INPUT);
   pinMode(outPin, OUTPUT);
 
   // Start serial communication
@@ -75,13 +75,16 @@ void loop()
   }
   
   // Read A0 and print all vals to LCD
-  scaledValue = map(analogRead(A0), 0, 1023, 1000, 2000);
+  scaledValue = map(analogRead(A0), 0, 1023, 0, 20);
+  scaledValue = 100*scaledValue;
   update_lcd(co2val, tempval, scaledValue);
 
   /************** Update GPIO ***************/
   // Servo move on IN_2 HIGH
-  val = digitalRead(inPin);
-  if (val > 0) {
+  // val = digitalRead(inPin);
+  // Read A0
+  val = analogRead(A1);
+  if (val > 200) {
     myservo.write(90);
   } else {
     myservo.write(0);
