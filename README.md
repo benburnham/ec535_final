@@ -1,7 +1,7 @@
 Ben Burnham burnham1@bu.edu
 Mateen Sharif mrsharif@bu.edu
 
-# Shared Files
+## Shared Files
 
 All shared documentation and presentations are available on Google Drive:
 
@@ -9,7 +9,7 @@ All shared documentation and presentations are available on Google Drive:
 * [Project Presentation](https://docs.google.com/presentation/d/1NVJiRA32t2KpKkBuPi_mDpwR9x0kDRu33ktXlAMVL_M/edit?usp=drive_link/)
 
 
-# Helpful References
+## Helpful References
 
 These resources were particularly useful for development and understanding hardware interactions:
 
@@ -19,6 +19,6 @@ These resources were particularly useful for development and understanding hardw
 4. [PRU Cookbook: Chapter on I/O](https://docs.beagleboard.org/books/pru-cookbook/06io/io.html/)
 
 
-# Additional Notes
+## Additional Notes
 
 * Previous lab materials and exercises were also referenced throughout the project.
